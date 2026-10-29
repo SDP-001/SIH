@@ -208,28 +208,24 @@ def build_presentation():
     slide2 = prs.slides.add_slide(blank_layout)
     add_common_header(slide2, "APAAR-Vault: Student Data Management & Verification Platform", 2)
 
-    # Center Hub Oval
-    hub_w = Emu(3400000)
-    hub_h = Emu(4900000)
-    hub_x = Emu(4396000)
-    hub_y = Emu(1150000)
-    
-    hub = slide2.shapes.add_shape(MSO_SHAPE.OVAL, hub_x, hub_y, hub_w, hub_h)
-    hub.fill.solid()
-    hub.fill.fore_color.rgb = CARD_BG_WARM
-    hub.line.color.rgb = ORANGE
-    hub.line.width = Pt(2.5)
-    htf = hub.text_frame
-    htf.word_wrap = True
-    htf.vertical_anchor = MSO_ANCHOR.MIDDLE
-    
-    hp = htf.paragraphs[0]
-    hp.text = "A smart and unique centralized platform to automate student data management, 10-point validation, multi-institution duplicate detection, and intake compliance monitoring for AICTE."
-    hp.font.name = "Calibri"
-    hp.font.bold = True
-    hp.font.size = Pt(14)
-    hp.font.color.rgb = NAVY
-    hp.alignment = PP_ALIGN.CENTER
+    # Center Hub Image: Core Platform Architecture & Flow
+    hub_img = "prototype_hub_architecture.png"
+    if os.path.exists(hub_img):
+        slide2.shapes.add_picture(hub_img, Emu(4250000), Emu(1150000), width=Emu(3700000), height=Emu(4950000))
+    else:
+        # Fallback Oval if image missing
+        hub = slide2.shapes.add_shape(MSO_SHAPE.OVAL, Emu(4396000), Emu(1150000), Emu(3400000), Emu(4900000))
+        hub.fill.solid()
+        hub.fill.fore_color.rgb = CARD_BG_WARM
+        hub.line.color.rgb = ORANGE
+        hub.line.width = Pt(2.5)
+        htf = hub.text_frame
+        htf.word_wrap = True
+        hp = htf.paragraphs[0]
+        hp.text = "A smart and unique centralized platform to automate student data management and verification."
+        hp.font.bold = True
+        hp.font.size = Pt(14)
+        hp.font.color.rgb = NAVY
 
     # Left Nodes (7 pills)
     left_nodes = [
@@ -467,118 +463,135 @@ def build_presentation():
     cp4.alignment = PP_ALIGN.CENTER
 
     # =========================================================================
-    # SLIDE 5: FEASIBILITY AND VIABILITY (3-Column Matrix matching Thinkode p.5)
+    # SLIDE 5: FEASIBILITY AND VIABILITY (Split Layout with Audit Prototype)
     # =========================================================================
     slide5 = prs.slides.add_slide(blank_layout)
     add_common_header(slide5, "FEASIBILITY AND VIABILITY", 5)
 
-    col_w = Emu(3500000)
-    col_gap = Emu(300000)
-    col1_x = Emu(550000)
-    col2_x = col1_x + col_w + col_gap
-    col3_x = col2_x + col_w + col_gap
+    # Left Column: 3 Structured Cards (Feasibility, Risks, Mitigations)
+    left5_x = Emu(550000)
+    left5_w = Emu(5100000)
+    card5_h = Emu(1550000)
+    gap5 = Emu(140000)
+    base5_y = Emu(1150000)
 
-    headers = [
-        (col1_x, "Feasibility Analysis", RGBColor(229, 80, 57)),   # Coral Red
-        (col2_x, "Challenges & Risks", RGBColor(243, 156, 18)),    # Orange/Amber
-        (col3_x, "Mitigation Strategies", RGBColor(41, 128, 185))  # Blue
-    ]
-    for cx, title, col in headers:
-        hdr_box = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, cx, Emu(1200000), col_w, Emu(550000))
-        hdr_box.fill.solid()
-        hdr_box.fill.fore_color.rgb = col
-        hdr_box.line.fill.background()
-        hp = hdr_box.text_frame.paragraphs[0]
-        hp.text = title
-        hp.font.name = "Calibri"
-        hp.font.bold = True
-        hp.font.size = Pt(14)
-        hp.font.color.rgb = WHITE
-        hp.alignment = PP_ALIGN.CENTER
-
-    # Row 1, 2, 3 Cards
-    cards_data = [
-        # Col 1: Feasibility
-        (col1_x, [
-            ("Prototype Ready Tech Stack", "Modern production-grade stack (Next.js 16 + FastAPI + PostgreSQL/SQLite) fully implemented and operational.", RGBColor(255, 243, 240), RGBColor(229, 80, 57)),
-            ("Core AICTE Features Achieved", "Intake vs actual enrolment monitoring, 10-point validation, and multi-tenant RBAC working end-to-end.", RGBColor(255, 243, 240), RGBColor(229, 80, 57)),
-            ("Low-Cost Scalable Deployment", "Containerized Docker setup with asynchronous API endpoints for low-cost nationwide university rollout.", RGBColor(255, 243, 240), RGBColor(229, 80, 57))
+    sec_cards = [
+        ("Feasibility Analysis", RGBColor(229, 80, 57), CARD_BG_WARM, [
+            ("Prototype Ready Stack: ", "Next.js 16 + FastAPI (Python 3.12) + PostgreSQL/SQLite"),
+            ("Core AICTE Features: ", "Intake quota monitoring, 10-point rule engine, multi-tenant RBAC"),
+            ("Scalable Deployment: ", "Containerized Docker microservices for low-cost nationwide university rollout")
         ]),
-        # Col 2: Challenges
-        (col2_x, [
-            ("Incomplete Student Records", "Institutions uploading legacy or dirty data with missing roll numbers or invalid APAAR format.", CARD_BG_AMBER, AMBER),
-            ("Cross-Campus Dual Enrolments", "Students concurrently admitted across two institutions claiming duplicate seats and scholarships.", CARD_BG_AMBER, AMBER),
-            ("Verification Service Limits", "Rate limits, network latency, or unexpected downtime on official third-party APAAR/ABC APIs.", CARD_BG_AMBER, AMBER)
+        ("Challenges & Risks", RGBColor(243, 156, 18), CARD_BG_AMBER, [
+            ("Incomplete Records: ", "Institutions uploading legacy dirty data with missing roll numbers"),
+            ("Dual Enrolments: ", "Concurrent admissions claiming duplicate technical seats & scholarships"),
+            ("API Latency / Outage: ", "Rate limits or temporary downtime on third-party verification APIs")
         ]),
-        # Col 3: Mitigation
-        (col3_x, [
-            ("Automated Checks & Corrections", "Immediate schema checks on upload with human-in-the-loop correction and re-validation workflows.", CARD_BG_BLUE, BLUE),
-            ("Fuzzy & Rule-Based Detector", "Similarity and exact-match algorithms flag dual enrolments with resolution audit logs.", CARD_BG_BLUE, BLUE),
-            ("Pluggable Dual-Adapter Design", "Built-in simulation sandbox allows seamless offline testing with zero external API downtime.", CARD_BG_BLUE, BLUE)
+        ("Mitigation Strategies", RGBColor(41, 128, 185), CARD_BG_BLUE, [
+            ("Automated Pre-Checks: ", "Immediate schema validation with human-in-the-loop correction desk"),
+            ("Fuzzy / Exact Detector: ", "Cross-campus duplicate identification with immutable audit logs"),
+            ("Simulation Sandbox: ", "Pluggable offline adapter enables seamless testing without external downtime")
         ])
     ]
 
-    card_h = Emu(1300000)
-    card_gap = Emu(150000)
-    base_y = Emu(1900000)
+    for idx, (title, hdr_col, bg_col, bullets) in enumerate(sec_cards):
+        cy = base5_y + idx * (card5_h + gap5)
+        c_box = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, left5_x, cy, left5_w, card5_h)
+        c_box.fill.solid()
+        c_box.fill.fore_color.rgb = bg_col
+        c_box.line.color.rgb = hdr_col
+        c_box.line.width = Pt(1.5)
+        
+        ctf = c_box.text_frame
+        ctf.word_wrap = True
+        
+        p0 = ctf.paragraphs[0]
+        p0.text = title
+        p0.font.name = "Calibri"
+        p0.font.bold = True
+        p0.font.size = Pt(12.5)
+        p0.font.color.rgb = hdr_col
+        p0.space_after = Pt(3)
 
-    for cx, c_list in cards_data:
-        for idx, (head, body, bg_c, border_c) in enumerate(c_list):
-            cy = base_y + idx * (card_h + card_gap)
-            c_box = slide5.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, cx, cy, col_w, card_h)
-            c_box.fill.solid()
-            c_box.fill.fore_color.rgb = bg_c
-            c_box.line.color.rgb = border_c
-            c_box.line.width = Pt(1.5)
-            ctf = c_box.text_frame
-            ctf.word_wrap = True
+        for b_lbl, b_desc in bullets:
+            p = ctf.add_paragraph()
+            p.space_after = Pt(2)
+            rl = p.add_run()
+            rl.text = "\u2022 " + b_lbl
+            rl.font.name = "Calibri"
+            rl.font.bold = True
+            rl.font.size = Pt(9.5)
+            rl.font.color.rgb = NAVY
             
-            p0 = ctf.paragraphs[0]
-            p0.text = head
-            p0.font.name = "Calibri"
-            p0.font.bold = True
-            p0.font.size = Pt(13)
-            p0.font.color.rgb = NAVY
-            p0.alignment = PP_ALIGN.CENTER
-            p0.space_after = Pt(4)
+            rd = p.add_run()
+            rd.text = b_desc
+            rd.font.name = "Calibri"
+            rd.font.size = Pt(9.5)
+            rd.font.color.rgb = DARK_TEXT
 
-            p1 = ctf.add_paragraph()
-            p1.text = body
-            p1.font.name = "Calibri"
-            p1.font.size = Pt(9.5)
-            p1.font.color.rgb = DARK_TEXT
-            p1.alignment = PP_ALIGN.CENTER
+    # Right Column: Audit Ledger & Security Prototype Screenshot
+    label_box5 = slide5.shapes.add_textbox(Emu(6000000), Emu(1150000), Emu(5600000), Emu(400000))
+    lbp5 = label_box5.text_frame.paragraphs[0]
+    lbp5.text = "PROTOTYPE SCREENSHOT"
+    lbp5.font.name = "Calibri"
+    lbp5.font.bold = True
+    lbp5.font.size = Pt(15)
+    lbp5.font.color.rgb = NAVY
+    lbp5.alignment = PP_ALIGN.CENTER
+
+    audit_shot = "prototype_audit_security_screenshot.png"
+    if os.path.exists(audit_shot):
+        slide5.shapes.add_picture(audit_shot, Emu(6000000), Emu(1650000), width=Emu(5600000), height=Emu(4000000))
+
+    caption_box5 = slide5.shapes.add_textbox(Emu(6000000), Emu(5750000), Emu(5600000), Emu(450000))
+    cp5 = caption_box5.text_frame.paragraphs[0]
+    cp5.text = "Tamper-Evident SHA-256 Audit Ledger & Dispute Correction Desk"
+    cp5.font.name = "Calibri"
+    cp5.font.bold = True
+    cp5.font.size = Pt(13)
+    cp5.font.color.rgb = NAVY
+    cp5.alignment = PP_ALIGN.CENTER
 
     # =========================================================================
-    # SLIDE 6: IMPACT AND BENEFITS (Numbered Cards 01 to 05 matching Thinkode p.6)
+    # SLIDE 6: IMPACT AND BENEFITS (Split Layout with Analytics Prototype)
     # =========================================================================
     slide6 = prs.slides.add_slide(blank_layout)
     add_common_header(slide6, "IMPACT AND BENEFITS", 6)
 
-    # 5 Staggered Numbered Cards
-    # Card 01 (Left Top)
-    card1_w = Emu(3600000)
-    card1_h = Emu(1550000)
+    # Left Column: 5 Numbered Cards (01 to 05)
+    left6_x = Emu(550000)
+    left6_w = Emu(5100000)
+    card6_h = Emu(820000)
+    gap6 = Emu(80000)
+    base6_y = Emu(1150000)
 
-    def draw_numbered_card(slide, x, y, w, h, num_str, title_str, desc_str, num_color, bg_color, border_color):
-        card = slide.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, x, y, w, h)
+    impact_items = [
+        ("01", "Regulatory Integrity (AICTE)", "Real-time quota monitoring eliminates unauthorized seat over-allocation and ghost seats.", ORANGE, CARD_BG_WARM, ORANGE),
+        ("02", "Fraud & Duplicate Prevention", "Cross-campus checks prevent concurrent admissions and duplicate scholarship claims.", ORANGE, CARD_BG_WARM, ORANGE),
+        ("03", "Transparency & Trust", "Cryptographic zero-knowledge verification prevents credential tampering & fake records.", BLUE, CARD_BG_BLUE, BLUE),
+        ("04", "Operational Efficiency", "Automated 10-point rule engine reduces manual inspection workload and backlogs by 80%.", BLUE, CARD_BG_BLUE, BLUE),
+        ("05", "Scalable for Future", "Privacy-by-design architecture adheres to DPDP Act 2023 for nationwide university rollout.", BLUE, CARD_BG_BLUE, BLUE)
+    ]
+
+    for idx, (num_str, title_str, desc_str, num_col, bg_col, border_col) in enumerate(impact_items):
+        cy = base6_y + idx * (card6_h + gap6)
+        card = slide6.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, left6_x, cy, left6_w, card6_h)
         card.fill.solid()
-        card.fill.fore_color.rgb = bg_color
-        card.line.color.rgb = border_color
+        card.fill.fore_color.rgb = bg_col
+        card.line.color.rgb = border_col
         card.line.width = Pt(1.5)
-        
-        # Large Number Box on left
-        n_box = slide.shapes.add_textbox(x + Emu(120000), y + Emu(100000), Emu(800000), h - Emu(200000))
+
+        # Number Box on left
+        n_box = slide6.shapes.add_textbox(left6_x + Emu(80000), cy + Emu(60000), Emu(600000), card6_h - Emu(120000))
         np = n_box.text_frame.paragraphs[0]
         np.text = num_str
         np.font.name = "Calibri"
         np.font.bold = True
-        np.font.size = Pt(36)
-        np.font.color.rgb = num_color
+        np.font.size = Pt(26)
+        np.font.color.rgb = num_col
         np.alignment = PP_ALIGN.CENTER
-        
+
         # Text Box on right
-        t_box = slide.shapes.add_textbox(x + Emu(950000), y + Emu(120000), w - Emu(1050000), h - Emu(240000))
+        t_box = slide6.shapes.add_textbox(left6_x + Emu(720000), cy + Emu(60000), left6_w - Emu(800000), card6_h - Emu(120000))
         ttf = t_box.text_frame
         ttf.word_wrap = True
         
@@ -586,66 +599,65 @@ def build_presentation():
         tp0.text = title_str
         tp0.font.name = "Calibri"
         tp0.font.bold = True
-        tp0.font.size = Pt(13)
+        tp0.font.size = Pt(11.5)
         tp0.font.color.rgb = NAVY
-        tp0.space_after = Pt(4)
+        tp0.space_after = Pt(2)
 
         tp1 = ttf.add_paragraph()
         tp1.text = desc_str
         tp1.font.name = "Calibri"
-        tp1.font.size = Pt(10)
+        tp1.font.size = Pt(9.5)
         tp1.font.color.rgb = DARK_TEXT
 
-    # 01 (Left Top)
-    draw_numbered_card(slide6, Emu(550000), Emu(1250000), card1_w, card1_h, "01", "Regulatory Integrity (AICTE)", "Real-time intake vs enrolment monitoring eliminates unauthorized seat over-allocation and ghost enrolments across technical campuses.", ORANGE, CARD_BG_WARM, ORANGE)
+    # Right Column: National Impact & Analytics Prototype Screenshot
+    label_box6 = slide6.shapes.add_textbox(Emu(6000000), Emu(1150000), Emu(5600000), Emu(400000))
+    lbp6 = label_box6.text_frame.paragraphs[0]
+    lbp6.text = "PROTOTYPE SCREENSHOT"
+    lbp6.font.name = "Calibri"
+    lbp6.font.bold = True
+    lbp6.font.size = Pt(15)
+    lbp6.font.color.rgb = NAVY
+    lbp6.alignment = PP_ALIGN.CENTER
 
-    # 02 (Left Bottom)
-    draw_numbered_card(slide6, Emu(550000), Emu(3000000), card1_w, card1_h, "02", "Fraud & Duplicate Prevention", "Automated cross-institutional checks prevent concurrent admissions and fraudulent duplicate scholarship claims.", ORANGE, CARD_BG_WARM, ORANGE)
+    impact_shot = "prototype_impact_analytics_screenshot.png"
+    if os.path.exists(impact_shot):
+        slide6.shapes.add_picture(impact_shot, Emu(6000000), Emu(1650000), width=Emu(5600000), height=Emu(3700000))
 
-    # 03 (Center)
-    draw_numbered_card(slide6, Emu(4350000), Emu(2100000), card1_w, card1_h, "03", "Transparency & Trust", "Cryptographic zero-knowledge verification prevents credential tampering, fake degrees, and falsified academic records.", BLUE, CARD_BG_BLUE, BLUE)
-
-    # 04 (Right Top)
-    draw_numbered_card(slide6, Emu(8150000), Emu(1250000), card1_w, card1_h, "04", "Operational Efficiency", "Standardized bulk upload and 10-point automated checks reduce manual reporting workload and inspection backlogs by 80%.", BLUE, CARD_BG_BLUE, BLUE)
-
-    # 05 (Right Bottom)
-    draw_numbered_card(slide6, Emu(8150000), Emu(3000000), card1_w, card1_h, "05", "Scalable for Future", "Privacy-by-design architecture strictly adheres to DPDP Act 2023, ready for nationwide rollout across all AICTE universities.", BLUE, CARD_BG_BLUE, BLUE)
+    caption_box6 = slide6.shapes.add_textbox(Emu(6000000), Emu(5400000), Emu(5600000), Emu(300000))
+    cp6 = caption_box6.text_frame.paragraphs[0]
+    cp6.text = "AICTE National Impact Analytics & Quota Compliance Dashboard"
+    cp6.font.name = "Calibri"
+    cp6.font.bold = True
+    cp6.font.size = Pt(12)
+    cp6.font.color.rgb = NAVY
+    cp6.alignment = PP_ALIGN.CENTER
 
     # Bottom Full-Width Highlight Banner for YouTube & GitHub
-    banner_w = Emu(11200000)
-    banner_h = Emu(1300000)
-    banner = slide6.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Emu(550000), Emu(4800000), banner_w, banner_h)
+    banner_w = Emu(11050000)
+    banner_h = Emu(850000)
+    banner = slide6.shapes.add_shape(MSO_SHAPE.ROUNDED_RECTANGLE, Emu(550000), Emu(5780000), banner_w, banner_h)
     banner.fill.solid()
     banner.fill.fore_color.rgb = CARD_BG_WARM
     banner.line.color.rgb = ORANGE
-    banner.line.width = Pt(2)
+    banner.line.width = Pt(1.5)
     
     btf = banner.text_frame
     btf.word_wrap = True
     
-    bp0 = btf.paragraphs[0]
-    bp0.text = "\U0001F3A5 WORKING PROTOTYPE DEMONSTRATION & REPOSITORY LINKS"
-    bp0.font.name = "Calibri"
-    bp0.font.bold = True
-    bp0.font.size = Pt(13)
-    bp0.font.color.rgb = RUST
-    bp0.alignment = PP_ALIGN.CENTER
-    bp0.space_after = Pt(4)
-
-    bp1 = btf.add_paragraph()
-    bp1.space_after = Pt(4)
+    bp1 = btf.paragraphs[0]
+    bp1.space_after = Pt(2)
     bp1.alignment = PP_ALIGN.CENTER
     r_b1_lbl = bp1.add_run()
     r_b1_lbl.text = "\u25B6 YouTube Prototype Video: "
     r_b1_lbl.font.name = "Calibri"
     r_b1_lbl.font.bold = True
-    r_b1_lbl.font.size = Pt(11.5)
+    r_b1_lbl.font.size = Pt(11)
     r_b1_lbl.font.color.rgb = RUST
     r_b1_lnk = bp1.add_run()
     r_b1_lnk.text = "https://youtu.be/rEz9BszbQnQ?si=c1oF4zL5QWqgU2EB"
     r_b1_lnk.font.name = "Calibri"
     r_b1_lnk.font.bold = True
-    r_b1_lnk.font.size = Pt(11.5)
+    r_b1_lnk.font.size = Pt(11)
     r_b1_lnk.font.underline = True
     r_b1_lnk.font.color.rgb = RGBColor(0, 102, 204)
     r_b1_lnk.hyperlink.address = "https://youtu.be/rEz9BszbQnQ?si=c1oF4zL5QWqgU2EB"
@@ -656,13 +668,13 @@ def build_presentation():
     r_b2_lbl.text = "\u25B6 GitHub Source Repository: "
     r_b2_lbl.font.name = "Calibri"
     r_b2_lbl.font.bold = True
-    r_b2_lbl.font.size = Pt(11.5)
+    r_b2_lbl.font.size = Pt(11)
     r_b2_lbl.font.color.rgb = NAVY
     r_b2_lnk = bp2.add_run()
     r_b2_lnk.text = "https://github.com/SDP-001/SIH.git"
     r_b2_lnk.font.name = "Calibri"
     r_b2_lnk.font.bold = True
-    r_b2_lnk.font.size = Pt(11.5)
+    r_b2_lnk.font.size = Pt(11)
     r_b2_lnk.font.underline = True
     r_b2_lnk.font.color.rgb = RGBColor(0, 102, 204)
     r_b2_lnk.hyperlink.address = "https://github.com/SDP-001/SIH.git"
