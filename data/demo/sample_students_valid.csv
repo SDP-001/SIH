@@ -1,0 +1,5 @@
+student_name,institution_reg_num,course_code,academic_year,admission_year,apaar_id,email,phone,date_of_birth,gender,admission_category,is_supernumerary,supernumerary_category
+Karan Malhotra,DITS-2024-CSE-010,BT-CSE,2024-2025,2024,SIM-APAAR-2024-819201,karan.m@dits.ac.in,+91-9811223344,2005-04-12,Male,GENERAL,False,
+Tanvi Joshi,DITS-2024-CSE-011,BT-CSE,2024-2025,2024,SIM-APAAR-2024-819202,tanvi.j@dits.ac.in,+91-9811223345,2005-09-25,Female,SC,False,
+Rohan Iyer,DITS-2024-ECE-012,BT-ECE,2024-2025,2024,SIM-APAAR-2024-819203,rohan.i@dits.ac.in,+91-9811223346,2005-07-18,Male,GENERAL,True,EWS
+Meera Nambiar,DITS-2024-ECE-013,BT-ECE,2024-2025,2024,SIM-APAAR-2024-819204,meera.n@dits.ac.in,+91-9811223347,2006-01-08,Female,OBC,False,

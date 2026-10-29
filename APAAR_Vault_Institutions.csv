@@ -1,0 +1,26 @@
+id,institution_code,name,aicte_approval_ref,institution_type,state,district,contact_email,contact_phone,status,is_simulated
+80dae4bc-b67c-483f-92f6-87b08818a159,1-1002345,Delhi Institute of Technology & Science,AICTE/NORTH/2024/1-1002345,Govt,Delhi,New Delhi,principal@dits.ac.in,+91-11-23900100,APPROVED,True
+d3f17940-45d0-4797-8932-8d963f5156b4,1-2009871,Maharashtra College of Engineering & Research,AICTE/WEST/2024/1-2009871,Autonomous,Maharashtra,Pune,dean@mcer.edu.in,+91-20-25507000,APPROVED,True
+ee21cb58-42fd-4a86-bbea-18ccc1beebc5,1-3004567,Karnataka Institute of Technology & Automation,AICTE/SOUTH/2024/1-3004567,Private,Karnataka,Bengaluru Urban,registrar@kita.ac.in,+91-80-28520000,APPROVED,True
+a7f86056-31ef-472d-9c04-1eb7ed380057,1-4001122,Tamil Nadu Technical Academy,AICTE/SR/2024/1-4001122,Govt-Aided,Tamil Nadu,Chennai,director@tnta.edu.in,+91-44-22351777,APPROVED,True
+b02108cd-a615-4919-abed-40306584793f,1-5003344,Hyderabad Institute of Engineering Studies,AICTE/SCRO/2024/1-5003344,Private,Telangana,Hyderabad,principal@hies.edu.in,+91-40-23158661,APPROVED,True
+e4213a6d-6ae5-4387-93f4-9ef8ca753e1f,1-6005566,Gujarat Technical College,AICTE/CRO/2024/1-6005566,Autonomous,Gujarat,Ahmedabad,dean@gtc.ac.in,+91-79-26300000,APPROVED,True
+6a284e15-05a1-4813-bf1e-e25b6dd0a8d2,1-7007788,Bengal College of Science & Technology,AICTE/ERO/2024/1-7007788,Govt,West Bengal,Kolkata,admin@bcst.edu.in,+91-33-24146666,APPROVED,True
+a7f75f51-e4bc-4059-b554-e42c5534d42f,1-8009900,Uttar Pradesh Engineering University College,AICTE/NRO/2024/1-8009900,Govt,Uttar Pradesh,Kanpur,provost@upeuc.ac.in,+91-512-2590151,APPROVED,True
+95bb18f0-c608-451f-bf2b-4886ba31584b,1-9001234,Kerala State Institute of Technology,AICTE/SWRO/2024/1-9001234,Govt-Aided,Kerala,Thiruvananthapuram,principal@ksit.ac.in,+91-471-2598370,APPROVED,True
+c51a70b7-7a21-4be8-80f3-2df0c85f79e8,1-1012345,Rajasthan Institute of Engineering & Research,AICTE/NWRO/2024/1-1012345,Private,Rajasthan,Jaipur,director@rier.ac.in,+91-141-2702954,APPROVED,True
+a6f38b43-9eb7-4ae7-8d68-70bee258e539,1-1123456,Madhya Pradesh Technological Institute,AICTE/MP/2024/1-1123456,Autonomous,Madhya Pradesh,Bhopal,dean@mpti.ac.in,+91-755-2678800,APPROVED,True
+28d4beb4-85e6-4585-ab92-4de0793cfc98,1-1234567,Punjab Engineering Polytechnic & College,AICTE/PB/2024/1-1234567,Govt,Punjab,Patiala,registrar@pepc.edu.in,+91-175-2393000,APPROVED,True
+4bf78448-ce4b-4f09-b9e2-fba026de1bc6,1-1345678,Odisha State Engineering Academy,AICTE/OD/2024/1-1345678,Govt-Aided,Odisha,Bhubaneswar,head@osea.ac.in,+91-674-2301000,APPROVED,True
+e9d1d24f-7224-4450-91d3-8031f8a75240,1-1456789,Assam Engineering & Information Institute,AICTE/NERO/2024/1-1456789,Govt,Assam,Guwahati,principal@aeii.ac.in,+91-361-2570000,APPROVED,True
+d9aaaaf9-827d-474e-8ab6-f02462e9c61b,1-1567890,Andhra Technical University College,AICTE/AP/2024/1-1567890,Autonomous,Andhra Pradesh,Visakhapatnam,rector@atuc.edu.in,+91-891-2844000,APPROVED,True
+9d2cecf9-d43b-432e-86cb-f6871a8732a6,1-1678901,Haryana Institute of Advanced Computing,AICTE/HR/2024/1-1678901,Private,Haryana,Gurugram,director@hiac.edu.in,+91-124-4190000,APPROVED,True
+9ab7669c-e42e-4627-83fc-6da429b68b29,1-1789012,Bihar Technical Training College,AICTE/BH/2024/1-1789012,Govt,Bihar,Patna,principal@bttc.ac.in,+91-612-2370000,APPROVED,True
+6538a08f-9d1b-4b91-9dc9-7174f999b8fa,1-1890123,Chhattisgarh Institute of Technology,AICTE/CG/2024/1-1890123,Govt-Aided,Chhattisgarh,Raipur,dean@citr.ac.in,+91-771-2254200,APPROVED,True
+b7ffaaeb-9ecd-4af7-86ed-2f3eaaef8ec3,1-1901234,Jharkhand Engineering Academy,AICTE/JH/2024/1-1901234,Autonomous,Jharkhand,Ranchi,admin@jea.ac.in,+91-651-2275000,APPROVED,True
+fe831d2d-89b7-4445-a030-1426c0105a30,1-2012345,Uttarakhand Institute of Technology,AICTE/UK/2024/1-2012345,Private,Uttarakhand,Dehradun,registrar@uitd.ac.in,+91-135-2770000,APPROVED,True
+e637b7e5-7a51-4852-9aa8-977ea69a3e7c,1-2123456,Himachal State Technical College,AICTE/HP/2024/1-2123456,Govt,Himachal Pradesh,Shimla,principal@hstc.edu.in,+91-177-2830000,APPROVED,True
+4de4bd7c-80b7-4cc4-9679-01bde29ab9e5,1-2234567,Goa College of Engineering & Design,AICTE/GOA/2024/1-2234567,Govt,Goa,Farmagudi,dean@gced.ac.in,+91-832-2336300,APPROVED,True
+0c1f2095-4879-4fa9-9817-e23faf71c436,1-2345678,Jammu & Kashmir Institute of Technology,AICTE/JK/2024/1-2345678,Govt-Aided,Jammu and Kashmir,Srinagar,provost@jkit.ac.in,+91-194-2424000,APPROVED,True
+b31fa2ac-8d03-494d-aa4e-46766f34ccf4,1-2456789,Chandigarh Technical University College,AICTE/CH/2024/1-2456789,Govt,Chandigarh,Chandigarh,director@ctuc.edu.in,+91-172-2753000,APPROVED,True
+68378e24-e84e-4952-9784-311d9f281080,1-2567890,National Capital Institute of Management & Tech,AICTE/NCR/2024/1-2567890,Autonomous,Delhi,Dwarka,dean@ncimt.ac.in,+91-11-28030000,APPROVED,True

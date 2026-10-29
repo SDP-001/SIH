@@ -1,0 +1,4 @@
+student_name,institution_reg_num,course_code,academic_year,admission_year,apaar_id,email,phone,date_of_birth,gender,admission_category,is_supernumerary,supernumerary_category
+Aarav Sharma,BT-2024-001,BT-CSE,2024-2025,2024,SIM-APAAR-2024-110294,aarav.sharma@example.edu.in,+91-9876500001,2006-02-15,Male,GENERAL,False,
+Sneha Kulkarni,BT-2024-002,BT-CSE,2024-2025,2024,SIM-APAAR-2024-220914,sneha.k@example.edu.in,+91-9876500002,2005-10-20,Female,OBC,True,TFW
+Aditya Nair,BT-2024-003,BT-ECE,2024-2025,2024,SIM-APAAR-2024-331005,aditya.nair@example.edu.in,+91-9876500003,2005-12-01,Male,GENERAL,False,

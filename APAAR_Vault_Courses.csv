@@ -1,0 +1,126 @@
+id,institution_id,course_name,course_code,degree_level,duration_years
+262c4113-0e51-48ee-a515-23107ae9d5d3,80dae4bc-b67c-483f-92f6-87b08818a159,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+0a966152-ca80-4e5e-ad6e-ced05f822595,80dae4bc-b67c-483f-92f6-87b08818a159,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+c77a4098-c6a1-4bd9-98f2-ab6afeffd13b,80dae4bc-b67c-483f-92f6-87b08818a159,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+51521ecd-bd45-4712-af1a-0bb0d211a34e,80dae4bc-b67c-483f-92f6-87b08818a159,B.Tech Mechanical Engineering,BT-MECH,UG,4
+17d3e100-a571-456e-9a2b-6b38201d7801,80dae4bc-b67c-483f-92f6-87b08818a159,Master of Business Administration,MBA-GEN,PG,2
+251c90ba-c905-4e19-8b66-a922b88d5b19,d3f17940-45d0-4797-8932-8d963f5156b4,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+d44f4292-4d3f-4768-a072-413ea9ad7766,d3f17940-45d0-4797-8932-8d963f5156b4,B.Tech Mechanical Engineering,BT-MECH,UG,4
+acb40399-be84-4aee-ae0d-105b0b96c25c,d3f17940-45d0-4797-8932-8d963f5156b4,B.Tech Information Technology,BT-IT,UG,4
+6f677ff8-284d-4fd1-985e-03a0d0bf0517,d3f17940-45d0-4797-8932-8d963f5156b4,Master of Business Administration,MBA-GEN,PG,2
+20a90a87-efba-4996-8bdb-b32d034e7880,d3f17940-45d0-4797-8932-8d963f5156b4,Master of Computer Applications,MCA-GEN,PG,2
+7d9385e9-3572-49f5-823d-bf99ee5addf7,ee21cb58-42fd-4a86-bbea-18ccc1beebc5,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+3f6e372b-cd20-4cb4-90dd-8fc0da92acd1,ee21cb58-42fd-4a86-bbea-18ccc1beebc5,B.Tech Information Technology,BT-IT,UG,4
+fbe85ea9-291d-4311-969e-a41819abdcb0,ee21cb58-42fd-4a86-bbea-18ccc1beebc5,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+f19c23bb-5831-4571-95f0-35642e094f6b,ee21cb58-42fd-4a86-bbea-18ccc1beebc5,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+421ee633-2523-4113-9a32-15bb377b3a72,ee21cb58-42fd-4a86-bbea-18ccc1beebc5,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+54e1447d-272d-4b48-a53c-a8b7bb004352,a7f86056-31ef-472d-9c04-1eb7ed380057,B.Tech Information Technology,BT-IT,UG,4
+8ed313be-f182-41a0-83aa-bf5b7694bd95,a7f86056-31ef-472d-9c04-1eb7ed380057,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+82d6d1df-b883-48fa-baf8-680ac93f5517,a7f86056-31ef-472d-9c04-1eb7ed380057,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+98acd73e-5546-4dde-bb23-a46936d35586,a7f86056-31ef-472d-9c04-1eb7ed380057,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+adff7e8d-a57c-44ed-afe2-1cdbc9e801d3,a7f86056-31ef-472d-9c04-1eb7ed380057,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+d0496a3b-425a-4897-82f6-68c11e076983,b02108cd-a615-4919-abed-40306584793f,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+1fe69315-8ae4-4b32-8290-1245df2b0238,b02108cd-a615-4919-abed-40306584793f,B.Tech Mechanical Engineering,BT-MECH,UG,4
+6b57032e-f9fd-4e68-be13-65e87ac004b1,b02108cd-a615-4919-abed-40306584793f,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+7d78d6ce-c8ab-4948-bea0-b8f0dccc6c99,b02108cd-a615-4919-abed-40306584793f,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+ac66241f-bd9c-4375-8e26-e6a35b61aa0b,b02108cd-a615-4919-abed-40306584793f,Master of Business Administration,MBA-GEN,PG,2
+3832627e-3945-4c77-9d52-edf55d347658,e4213a6d-6ae5-4387-93f4-9ef8ca753e1f,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+3604263d-4a27-4db9-b8b0-d6d077bb1b63,e4213a6d-6ae5-4387-93f4-9ef8ca753e1f,Master of Business Administration,MBA-GEN,PG,2
+259a1d58-c4be-480a-ae90-376e61dfcad9,e4213a6d-6ae5-4387-93f4-9ef8ca753e1f,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+482fffa5-1c91-4cf5-b780-8c35e342c6a0,e4213a6d-6ae5-4387-93f4-9ef8ca753e1f,B.Tech Information Technology,BT-IT,UG,4
+e6e4f8f1-2e03-4b3b-87fd-fffec19b7d68,e4213a6d-6ae5-4387-93f4-9ef8ca753e1f,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+681954b9-64b8-4257-b97b-ced1547d2e74,6a284e15-05a1-4813-bf1e-e25b6dd0a8d2,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+b3c8d10c-a074-4783-a08a-f746b55c8fa9,6a284e15-05a1-4813-bf1e-e25b6dd0a8d2,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+d9d552e9-037b-4654-91b5-e7389f9ab260,6a284e15-05a1-4813-bf1e-e25b6dd0a8d2,B.Tech Mechanical Engineering,BT-MECH,UG,4
+b66b8273-e1fa-4bcd-99be-1613bff61277,6a284e15-05a1-4813-bf1e-e25b6dd0a8d2,B.Tech Information Technology,BT-IT,UG,4
+bc30ffac-b692-4f3a-806d-f4851c72c11c,6a284e15-05a1-4813-bf1e-e25b6dd0a8d2,Master of Computer Applications,MCA-GEN,PG,2
+90cff514-fa65-4b12-95f4-00effc65e63e,a7f75f51-e4bc-4059-b554-e42c5534d42f,B.Tech Information Technology,BT-IT,UG,4
+9c5cabc9-c1ba-46fb-abfa-bc0a25636e0c,a7f75f51-e4bc-4059-b554-e42c5534d42f,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+c0c9606b-c61a-49ca-9b00-2ca3a6966b0e,a7f75f51-e4bc-4059-b554-e42c5534d42f,B.Tech Civil Engineering,BT-CIVIL,UG,4
+abbfe17f-c060-43af-9bc5-fdc9dd6268a1,a7f75f51-e4bc-4059-b554-e42c5534d42f,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+f1addf0a-938a-442f-bee4-59b7700c3454,a7f75f51-e4bc-4059-b554-e42c5534d42f,Master of Computer Applications,MCA-GEN,PG,2
+ea3271a1-cb17-498b-8828-0e620da48351,95bb18f0-c608-451f-bf2b-4886ba31584b,B.Tech Civil Engineering,BT-CIVIL,UG,4
+c918cf2d-0cfc-4e47-bfe4-0a735f63e004,95bb18f0-c608-451f-bf2b-4886ba31584b,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+6330e397-9328-46bc-b4a0-c28fcbf0dfd8,95bb18f0-c608-451f-bf2b-4886ba31584b,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+0bf35d52-e09d-400b-a382-fbc565633169,95bb18f0-c608-451f-bf2b-4886ba31584b,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+17e28d53-616d-47bc-9baf-f93d9c5efa4b,95bb18f0-c608-451f-bf2b-4886ba31584b,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+e49af74e-1995-48ad-a068-973ffe39eaf1,c51a70b7-7a21-4be8-80f3-2df0c85f79e8,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+9b22b090-a971-489d-ba2d-c434f834e5c7,c51a70b7-7a21-4be8-80f3-2df0c85f79e8,B.Tech Civil Engineering,BT-CIVIL,UG,4
+28036667-59a2-424a-a2ff-729d1fc3f062,c51a70b7-7a21-4be8-80f3-2df0c85f79e8,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+72d3bfff-ff4a-449e-898e-cacf4471999c,c51a70b7-7a21-4be8-80f3-2df0c85f79e8,B.Tech Information Technology,BT-IT,UG,4
+4ca59bcb-5b93-4788-8a5e-88f7daae5a04,c51a70b7-7a21-4be8-80f3-2df0c85f79e8,Master of Business Administration,MBA-GEN,PG,2
+c9453559-7349-4158-8a0e-e673d9ee11fc,a6f38b43-9eb7-4ae7-8d68-70bee258e539,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+54576602-35e4-4e49-a99f-3ac5a6673231,a6f38b43-9eb7-4ae7-8d68-70bee258e539,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+72fc2714-8727-4228-86b2-906f63c37e90,a6f38b43-9eb7-4ae7-8d68-70bee258e539,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+8da9c25a-64a0-4ad5-b316-27f2e8953ba7,a6f38b43-9eb7-4ae7-8d68-70bee258e539,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+46f355d4-98d8-4628-8f70-ced59f10f2d7,a6f38b43-9eb7-4ae7-8d68-70bee258e539,B.Tech Mechanical Engineering,BT-MECH,UG,4
+c6dba8d5-1d40-4dde-96a1-081d2782c95b,28d4beb4-85e6-4585-ab92-4de0793cfc98,B.Tech Information Technology,BT-IT,UG,4
+5d8d4b17-7479-42bd-8c58-861d36575016,28d4beb4-85e6-4585-ab92-4de0793cfc98,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+cc801833-97e3-499c-acac-a2d53c8aa6c8,28d4beb4-85e6-4585-ab92-4de0793cfc98,Master of Computer Applications,MCA-GEN,PG,2
+c399e1d5-1044-492b-82da-73b7ea32568b,28d4beb4-85e6-4585-ab92-4de0793cfc98,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+ac8ed64f-4235-4c80-a03a-50fba46d5736,28d4beb4-85e6-4585-ab92-4de0793cfc98,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+b4913ee8-aedd-48a3-86a7-d3edfbf600c8,4bf78448-ce4b-4f09-b9e2-fba026de1bc6,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+637dccd8-0789-4fb5-8135-13d8f240fe40,4bf78448-ce4b-4f09-b9e2-fba026de1bc6,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+110ee5a7-937f-407b-9008-eb4e4e6036cc,4bf78448-ce4b-4f09-b9e2-fba026de1bc6,Master of Business Administration,MBA-GEN,PG,2
+edd03f79-b3f8-4037-8719-900c2b1e5fee,4bf78448-ce4b-4f09-b9e2-fba026de1bc6,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+225ff324-dfce-47b3-904f-78a58f118f0c,4bf78448-ce4b-4f09-b9e2-fba026de1bc6,B.Tech Civil Engineering,BT-CIVIL,UG,4
+868f15a6-5963-451f-ac35-f12346daad0a,e9d1d24f-7224-4450-91d3-8031f8a75240,B.Tech Civil Engineering,BT-CIVIL,UG,4
+e55bae3b-7528-499d-a0a6-db944a8a5f72,e9d1d24f-7224-4450-91d3-8031f8a75240,Master of Business Administration,MBA-GEN,PG,2
+0a68b12f-3b0e-4156-85f4-65ed9bb25e68,e9d1d24f-7224-4450-91d3-8031f8a75240,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+37a2b03f-9b27-4652-9238-856ab165e6a3,e9d1d24f-7224-4450-91d3-8031f8a75240,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+10ef3fca-8f79-45ec-a0d4-52813cb6ae3a,e9d1d24f-7224-4450-91d3-8031f8a75240,B.Tech Information Technology,BT-IT,UG,4
+7b188897-b394-4cf9-8700-9a7f722b9bf9,d9aaaaf9-827d-474e-8ab6-f02462e9c61b,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+b5f9fc69-ca70-4ac1-9ae6-29ec47090163,d9aaaaf9-827d-474e-8ab6-f02462e9c61b,Master of Business Administration,MBA-GEN,PG,2
+cc90cb90-7871-4dd2-bbd0-3d95b964c623,d9aaaaf9-827d-474e-8ab6-f02462e9c61b,B.Tech Mechanical Engineering,BT-MECH,UG,4
+4da6e878-b324-46cb-a6df-ccc7d44e747c,d9aaaaf9-827d-474e-8ab6-f02462e9c61b,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+9898d9fb-f318-4b02-a1ce-f321aa0914c6,d9aaaaf9-827d-474e-8ab6-f02462e9c61b,B.Tech Civil Engineering,BT-CIVIL,UG,4
+d4a719ec-3d40-4f33-80da-5d6439074628,9d2cecf9-d43b-432e-86cb-f6871a8732a6,Master of Computer Applications,MCA-GEN,PG,2
+e0c094ce-4137-4d52-9668-971df6845b80,9d2cecf9-d43b-432e-86cb-f6871a8732a6,B.Tech Information Technology,BT-IT,UG,4
+87588610-4d1a-473d-ba6e-28f18de9accc,9d2cecf9-d43b-432e-86cb-f6871a8732a6,B.Tech Civil Engineering,BT-CIVIL,UG,4
+b5e0f00a-7f13-4a0b-946d-769f687b857e,9d2cecf9-d43b-432e-86cb-f6871a8732a6,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+eb10e4ae-e6e0-4021-949c-2696070b2e6c,9d2cecf9-d43b-432e-86cb-f6871a8732a6,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+cd6aeaba-94b3-45ab-b4f9-ba0af546c2d1,9ab7669c-e42e-4627-83fc-6da429b68b29,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+4b84643e-f2a5-41c2-9cde-838a91b33ded,9ab7669c-e42e-4627-83fc-6da429b68b29,Master of Computer Applications,MCA-GEN,PG,2
+839665d2-8c88-49af-a167-7a1d3f51dd69,9ab7669c-e42e-4627-83fc-6da429b68b29,B.Tech Civil Engineering,BT-CIVIL,UG,4
+a753543d-fec6-4d0d-b312-c97f40ff9c51,9ab7669c-e42e-4627-83fc-6da429b68b29,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+3ce6b8bf-fcbd-469b-9a0b-56e41de16791,9ab7669c-e42e-4627-83fc-6da429b68b29,B.Tech Mechanical Engineering,BT-MECH,UG,4
+798b1dab-b848-421b-bcfb-232c3118c97a,6538a08f-9d1b-4b91-9dc9-7174f999b8fa,Master of Computer Applications,MCA-GEN,PG,2
+3e0bb68a-51e8-4645-9388-b6ca2be8bc12,6538a08f-9d1b-4b91-9dc9-7174f999b8fa,B.Tech Mechanical Engineering,BT-MECH,UG,4
+a05d8356-8811-4ab3-9dde-80779ab56e9f,6538a08f-9d1b-4b91-9dc9-7174f999b8fa,B.Tech Civil Engineering,BT-CIVIL,UG,4
+6bd2b909-0c3f-48e6-b2cf-9f726a51c30e,6538a08f-9d1b-4b91-9dc9-7174f999b8fa,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+06656041-33b4-46d0-b5e4-1c2aba3d1b63,6538a08f-9d1b-4b91-9dc9-7174f999b8fa,Master of Business Administration,MBA-GEN,PG,2
+d5140b7a-cf6d-4c31-8208-e34da811c074,b7ffaaeb-9ecd-4af7-86ed-2f3eaaef8ec3,B.Tech Mechanical Engineering,BT-MECH,UG,4
+3f43ad0e-56a5-426a-a4f4-040cf88931d0,b7ffaaeb-9ecd-4af7-86ed-2f3eaaef8ec3,Master of Business Administration,MBA-GEN,PG,2
+60c2dc67-a1f7-4cb3-88f4-855fcbac4ac6,b7ffaaeb-9ecd-4af7-86ed-2f3eaaef8ec3,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+74f79533-a3be-4db8-880c-06b70f3996c5,b7ffaaeb-9ecd-4af7-86ed-2f3eaaef8ec3,B.Tech Civil Engineering,BT-CIVIL,UG,4
+85cfbddc-8ab1-4f7d-bf1c-49469a14181c,b7ffaaeb-9ecd-4af7-86ed-2f3eaaef8ec3,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+07741c34-0664-46c3-9509-6ac128b12bed,fe831d2d-89b7-4445-a030-1426c0105a30,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+1680138e-859b-46db-9590-cb14065da350,fe831d2d-89b7-4445-a030-1426c0105a30,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+9413e27b-8bfd-4db1-8621-d9af8973486e,fe831d2d-89b7-4445-a030-1426c0105a30,B.Tech Information Technology,BT-IT,UG,4
+674830d6-1083-4b5a-a1fd-d6646041a59c,fe831d2d-89b7-4445-a030-1426c0105a30,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+843a67c7-9d04-42e6-938e-70aa10e6e49b,fe831d2d-89b7-4445-a030-1426c0105a30,B.Tech Civil Engineering,BT-CIVIL,UG,4
+923ddd7c-c13c-4b2c-a1de-294365cbdd7e,e637b7e5-7a51-4852-9aa8-977ea69a3e7c,Master of Business Administration,MBA-GEN,PG,2
+ac1fa6bd-7bf6-4268-bd9d-4ea4cd1d0842,e637b7e5-7a51-4852-9aa8-977ea69a3e7c,B.Tech Electrical & Electronics Engineering,BT-EEE,UG,4
+ca89c664-b090-4235-ba3a-f0cf4ac7fa08,e637b7e5-7a51-4852-9aa8-977ea69a3e7c,Master of Computer Applications,MCA-GEN,PG,2
+953cb9ac-3214-437a-99bc-edb732e09e27,e637b7e5-7a51-4852-9aa8-977ea69a3e7c,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+b116f746-5186-4821-ae01-38299ea5e376,e637b7e5-7a51-4852-9aa8-977ea69a3e7c,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+1f2bc84d-a947-44ba-80db-f14c70774b2f,4de4bd7c-80b7-4cc4-9679-01bde29ab9e5,B.Tech Civil Engineering,BT-CIVIL,UG,4
+e6b19cc2-dc23-4795-9f07-403a6fd76a15,4de4bd7c-80b7-4cc4-9679-01bde29ab9e5,B.Tech Mechanical Engineering,BT-MECH,UG,4
+9d818f1d-1b61-4b04-b825-0b80b2a6e9cf,4de4bd7c-80b7-4cc4-9679-01bde29ab9e5,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+d7316c9e-7342-4212-bca7-2553c2930c2e,4de4bd7c-80b7-4cc4-9679-01bde29ab9e5,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+ed77c523-4fb3-43b2-b0c2-0006a41f9c55,4de4bd7c-80b7-4cc4-9679-01bde29ab9e5,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+cadce363-39e6-41fa-9a2f-77bf467b8073,0c1f2095-4879-4fa9-9817-e23faf71c436,B.Tech Information Technology,BT-IT,UG,4
+e9de3c2d-f30e-4201-945a-d5e609df927c,0c1f2095-4879-4fa9-9817-e23faf71c436,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+7169fac0-a0cb-4e65-83ee-1798de73334b,0c1f2095-4879-4fa9-9817-e23faf71c436,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+a07af058-1d7d-4aaa-bafb-e496ff8e2eb7,0c1f2095-4879-4fa9-9817-e23faf71c436,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+5053ebf3-f8b9-4003-99dd-8be2658546d4,0c1f2095-4879-4fa9-9817-e23faf71c436,B.Tech Mechanical Engineering,BT-MECH,UG,4
+e9e64038-e84b-4977-bd78-3224ddc3ca7d,b31fa2ac-8d03-494d-aa4e-46766f34ccf4,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+3f3382b2-af91-4fda-a2a0-46b646e0737b,b31fa2ac-8d03-494d-aa4e-46766f34ccf4,B.Tech Civil Engineering,BT-CIVIL,UG,4
+592b5ca5-5120-4986-961d-b7c999dde338,b31fa2ac-8d03-494d-aa4e-46766f34ccf4,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+e520bc68-eb6d-4675-a2dc-fc85a70c897c,b31fa2ac-8d03-494d-aa4e-46766f34ccf4,Master of Computer Applications,MCA-GEN,PG,2
+334da916-690e-4498-81b5-6962a34acf98,b31fa2ac-8d03-494d-aa4e-46766f34ccf4,B.Tech Computer Science & Engineering,BT-CSE,UG,4
+7fa3222a-6e3f-4803-a599-2c17b4f21396,68378e24-e84e-4952-9784-311d9f281080,M.Tech Computer Science & Engineering,MT-CSE,PG,2
+c963346d-ce43-403c-97bc-61aedaaa35ae,68378e24-e84e-4952-9784-311d9f281080,B.Tech Information Technology,BT-IT,UG,4
+886dc4cb-a6f1-4fd8-a491-b9b91fe9da2e,68378e24-e84e-4952-9784-311d9f281080,B.Tech Electronics & Communication Engineering,BT-ECE,UG,4
+82766e0f-df77-4faf-8a76-04a03056514e,68378e24-e84e-4952-9784-311d9f281080,B.Tech Artificial Intelligence & Machine Learning,BT-AIML,UG,4
+57990f25-c7ea-4416-8957-70b9f570938d,68378e24-e84e-4952-9784-311d9f281080,Master of Business Administration,MBA-GEN,PG,2

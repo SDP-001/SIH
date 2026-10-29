@@ -1,0 +1,7 @@
+student_name,institution_reg_num,course_code,academic_year,admission_year,apaar_id,email,phone,date_of_birth,gender,admission_category,is_supernumerary,supernumerary_category
+Siddharth Rao,DITS-2024-CSE-020,BT-CSE,2024-2025,2024,SIM-APAAR-2024-998811,siddharth.r@dits.ac.in,+91-9811223388,2005-03-14,Male,GENERAL,False,
+Imposter Duplicate,DITS-2024-CSE-001,BT-CSE,2024-2025,2024,SIM-APAAR-2024-984210,duplicate@dits.ac.in,+91-9811223399,2005-08-14,Male,GENERAL,False,
+Missing Course Student,DITS-2024-CSE-021,INVALID-COURSE,2024-2025,2024,SIM-APAAR-2024-998822,missing.c@dits.ac.in,+91-9811223300,2005-06-11,Female,GENERAL,False,
+Bad Format Apaar,DITS-2024-CSE-022,BT-CSE,2024-2025,2024,NOT-AN-APAAR,bad.apaar@dits.ac.in,+91-9811223311,2005-12-05,Male,GENERAL,False,
+Within Batch Duplicate 1,DITS-2024-CSE-023,BT-CSE,2024-2025,2024,SIM-APAAR-2024-998833,batch.dup1@dits.ac.in,+91-9811223322,2005-09-09,Female,GENERAL,False,
+Within Batch Duplicate 2,DITS-2024-CSE-023,BT-CSE,2024-2025,2024,SIM-APAAR-2024-998834,batch.dup2@dits.ac.in,+91-9811223333,2005-09-09,Female,GENERAL,False,

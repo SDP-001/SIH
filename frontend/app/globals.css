@@ -1,0 +1,458 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *, [data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --color-slate-850: #172033;
+  --color-slate-750: #253347;
+}
+
+/* -------------------------------------------------------------
+   APAAR-VAULT — ENTERPRISE SAAS DESIGN SYSTEM
+   AICTE National Regulatory Platform (SIH Problem Statement 26263)
+   Clean, Minimal, Professional GovTech / EdTech Interface
+   ------------------------------------------------------------- */
+
+:root {
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* Primary Pure White Theme Palette */
+  --bg-app: #FFFFFF;
+  --bg-surface: #FFFFFF;
+  --bg-surface-subtle: #F8FAFC;
+  --bg-hover: #F1F5F9;
+  --border-color: #E2E8F0;
+  --border-subtle: #F1F5F9;
+
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #94A3B8;
+
+  --primary: #0F172A;
+  --primary-hover: #1E293B;
+  --primary-subtle: #F1F5F9;
+
+  --success: #16A34A;
+  --warning: #D97706;
+  --error: #DC2626;
+  --info: #475569;
+  --ai-accent: #334155;
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.06), 0 1px 2px -1px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.06), 0 2px 4px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.06), 0 4px 6px -4px rgba(0, 0, 0, 0.03);
+}
+
+/* Dark Theme Palette */
+[data-theme="dark"],
+.dark {
+  --bg-app: #0B0F19;
+  --bg-surface: #0F172A;
+  --bg-surface-subtle: #1E293B;
+  --bg-hover: #1E293B;
+  --border-color: #334155;
+  --border-subtle: #1E293B;
+
+  --text-primary: #F8FAFC;
+  --text-secondary: #CBD5E1;
+  --text-muted: #94A3B8;
+
+  --primary: #F8FAFC;
+  --primary-hover: #E2E8F0;
+  --primary-subtle: #1E293B;
+
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #94A3B8;
+  --ai-accent: #CBD5E1;
+
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
+
+/* Seamless Multilingual Translation Tool Styles - Clean integration without top banner */
+.goog-te-banner-frame,
+.goog-te-banner-frame.skiptranslate,
+iframe.goog-te-banner-frame,
+iframe.skiptranslate,
+body > .skiptranslate,
+body > div.skiptranslate,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,
+.VIpgJd-ZVi9od-aZ2wEe-wOHMyf-ti6hGc,
+#goog-gt-tt {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0px !important;
+  width: 0px !important;
+  pointer-events: none !important;
+}
+
+html, body {
+  top: 0px !important;
+  position: static !important;
+}
+
+#google_translate_element {
+  display: none !important;
+}
+.goog-tooltip {
+  display: none !important;
+}
+.goog-tooltip:hover {
+  display: none !important;
+}
+.goog-text-highlight {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Base Document Styles */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* High-contrast table & list row hover guarantee for light & dark mode */
+tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+html[data-theme="dark"] tbody tr:hover,
+html.dark tbody tr:hover,
+.dark tbody tr:hover {
+  background-color: rgba(30, 41, 59, 0.75) !important;
+}
+
+html[data-theme="light"] tbody tr:hover,
+html:not(.dark) tbody tr:hover {
+  background-color: rgba(248, 250, 252, 0.9) !important;
+}
+
+/* High-contrast dropdown popover item hover guarantee */
+html[data-theme="dark"] .animate-fade-in button:hover,
+html.dark .animate-fade-in button:hover,
+.dark .animate-fade-in button:hover,
+html[data-theme="dark"] [role="menu"] button:hover,
+html.dark [role="menu"] button:hover,
+.dark [role="menu"] button:hover {
+  background-color: rgba(30, 41, 59, 0.92) !important;
+  color: #FFFFFF !important;
+}
+
+html[data-theme="dark"] .animate-fade-in button:hover *,
+html.dark .animate-fade-in button:hover *,
+.dark .animate-fade-in button:hover * {
+  color: #FFFFFF !important;
+}
+
+html[data-theme="light"] .animate-fade-in button:hover,
+html:not(.dark) .animate-fade-in button:hover,
+html[data-theme="light"] [role="menu"] button:hover,
+html:not(.dark) [role="menu"] button:hover {
+  background-color: rgba(241, 245, 249, 0.95) !important;
+  color: #0F172A !important;
+}
+
+html[data-theme="light"] .animate-fade-in button:hover *,
+html:not(.dark) .animate-fade-in button:hover * {
+  color: #0F172A !important;
+}
+
+/* Global native select & option dark/light theme support */
+html.dark select,
+html[data-theme="dark"] select,
+.dark select {
+  color-scheme: dark !important;
+  background-color: #1E293B !important;
+  color: #F8FAFC !important;
+}
+
+html.dark select option,
+html[data-theme="dark"] select option,
+.dark select option {
+  background-color: #0F172A !important;
+  color: #F8FAFC !important;
+}
+
+html:not(.dark) select,
+html[data-theme="light"] select {
+  color-scheme: light !important;
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+html:not(.dark) select option,
+html[data-theme="light"] select option {
+  background-color: #FFFFFF !important;
+  color: #0F172A !important;
+}
+
+/* Dark mode fallback: prevent any element from flashing white on hover */
+html.dark [class*="hover:bg-slate-50"]:hover:not([class*="dark:hover:"]),
+html[data-theme="dark"] [class*="hover:bg-slate-50"]:hover:not([class*="dark:hover:"]),
+.dark [class*="hover:bg-slate-50"]:hover:not([class*="dark:hover:"]),
+html.dark [class*="hover:bg-slate-100"]:hover:not([class*="dark:hover:"]),
+html[data-theme="dark"] [class*="hover:bg-slate-100"]:hover:not([class*="dark:hover:"]),
+.dark [class*="hover:bg-slate-100"]:hover:not([class*="dark:hover:"]) {
+  background-color: rgba(30, 41, 59, 0.8) !important;
+}
+
+
+/* Enterprise Surface & Card Tokens */
+.enterprise-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  box-shadow: var(--shadow-xs);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.enterprise-card:hover {
+  border-color: #CBD5E1;
+  box-shadow: var(--shadow-sm);
+}
+
+.dark .enterprise-card:hover {
+  border-color: #334155;
+}
+
+/* Professional Card Hover Lift */
+.card-hover {
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Button Press Interaction */
+.btn-press {
+  transition: transform 0.1s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.btn-press:active {
+  transform: scale(0.98);
+}
+
+/* Primary Enterprise Button */
+.btn-primary {
+  background-color: var(--primary);
+  color: #FFFFFF;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  box-shadow: var(--shadow-xs);
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+/* Secondary Enterprise Button */
+.btn-secondary {
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  box-shadow: var(--shadow-xs);
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg-surface-subtle);
+  border-color: #CBD5E1;
+}
+
+/* Form Controls */
+input, select, textarea {
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #0F172A;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+}
+
+/* Status Badges */
+.badge-success {
+  background-color: #F0FDF4;
+  color: #16A34A;
+  border: 1px solid #BBF7D0;
+}
+.dark .badge-success {
+  background-color: #F0FDF4;
+  color: #16A34A;
+  border-color: #BBF7D0;
+}
+
+.badge-warning {
+  background-color: #FFFBEB;
+  color: #D97706;
+  border: 1px solid #FDE68A;
+}
+.dark .badge-warning {
+  background-color: #FFFBEB;
+  color: #D97706;
+  border-color: #FDE68A;
+}
+
+.badge-error {
+  background-color: #FEF2F2;
+  color: #DC2626;
+  border: 1px solid #FECACA;
+}
+.dark .badge-error {
+  background-color: #FEF2F2;
+  color: #DC2626;
+  border-color: #FECACA;
+}
+
+.badge-info {
+  background-color: #F8FAFC;
+  color: #334155;
+  border: 1px solid #E2E8F0;
+}
+.dark .badge-info {
+  background-color: #F8FAFC;
+  color: #334155;
+  border-color: #E2E8F0;
+}
+
+.badge-indigo {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  border: 1px solid #E2E8F0;
+}
+.dark .badge-indigo {
+  background-color: #F8FAFC;
+  color: #0F172A;
+  border-color: #E2E8F0;
+}
+
+/* -------------------------------------------------------------
+   SMOOTH, SUBTLE ENTERPRISE ANIMATIONS
+   Duration 180-260ms, gentle easing, no jarring bounces
+   ------------------------------------------------------------- */
+@keyframes fadeInSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes skeletonPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.45;
+  }
+}
+
+/* Page Transition */
+.animate-view-enter {
+  animation: fadeInSlideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.18s ease-out forwards;
+}
+
+/* Staggered Card Entrance */
+.animate-stagger-1 {
+  animation: fadeInSlideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) 0.02s both;
+}
+.animate-stagger-2 {
+  animation: fadeInSlideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both;
+}
+.animate-stagger-3 {
+  animation: fadeInSlideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
+}
+.animate-stagger-4 {
+  animation: fadeInSlideUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) 0.11s both;
+}
+
+/* Skeleton Loading */
+.skeleton {
+  background-color: #E2E8F0;
+  border-radius: 0.5rem;
+  animation: skeletonPulse 1.8s ease-in-out infinite;
+}
+.dark .skeleton {
+  background-color: #1E293B;
+}
+
+/* Respect Prefers Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Professional Tabular Numbers */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Clean Professional Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
